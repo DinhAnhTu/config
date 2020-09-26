@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	kosole
 
 # program launcher
 super + alt + d
@@ -119,3 +119,16 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# requires `xbacklight`
+XF86MonBrightness{Down,Up}
+    xbacklight {-dec 15,-inc 15}
+
+# requires `amixer`
+XF86Audio{Mute,LowerVolume,RaiseVolume}
+    amixer set Master {toggle,5%-,5%+}
+
+# requires `playerctl`
+XF86Audio{Play,Prev,Next,Stop}
+    playerctl {play-pause,previous,next,stop}
+
