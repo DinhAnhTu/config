@@ -211,11 +211,11 @@ exec --no-startup-id xrandr --output eDP-1 --right-of HDMI-1
 exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080
 exec --no-startup-id xrandr --output HDMI-1 --brightness 0.7
 exec --no-startup-id xrandr --output eDP-1 --mode 2880x1620
-exec --no-startup-id xrandr --output eDP-1 --brightness 0.7
+#exec --no-startup-id xrandr --output eDP-1 --brightness 0.7
 
 exec --no-startup-id nitrogen --set-auto /usr/share/backgrounds/windows-10-uhd-4k-wallpaper.jpg --head=0 && nitrogen --set-auto /usr/share/backgrounds/windows-10-uhd-4k-wallpaper.jpg --head=1
 
-xinput --map-to-output 'ELAN Touchscreen' eDP-1
+exec --no-startup-id xinput --map-to-output 'ELAN Touchscreen' eDP-1
 
 exec --no-startup-id ~/.config/polybar/launch.sh
 
