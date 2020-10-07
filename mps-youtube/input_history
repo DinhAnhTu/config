@@ -1,0 +1,66 @@
+nhac xua
+nhac
+h
+config
+h
+help config
+help search
+.nhac xua
+help
+help config
+set api_key AIzaSyD87jIRIX1o6jtgtTkzv_Jl3F93q3p06Kc
+.nhac xua
+help config
+set api_key AIzaSyD87jIRIX1o6jtgtTkzv_Jl3F93q3p06Kc
+help config
+exit
+/nhac xua
+play 1
+h
+tips
+h tips
+h
+h new
+h
+h basic
+.nhan xua
+/nhac xua
+1
+set player mplayer
+.nhac xua
+1
+set player mpv
+q
+.nhac xua
+1
+set player mplayer
+q
+.mmg
+n
+34
+/nhac xua
+28
+20
+21
+22
+q
+.mmg group
+1
+2
+3
+set player mpv --title=$@
+set player /home/dinhanhtu/.config/mps-youtube/mpv.sh
+1
+q
+/mmg group
+1
+set player mplayer
+q
+nbr
+/nbr
+24
+config
+set config
+/nbr
+3
+q
