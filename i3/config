@@ -195,13 +195,15 @@ mode "openapp" {
     bindsym b exec brave
     bindsym f exec firefox
     bindsym e exec emacs
-    bindsym l exec --no-startup-id ~/.config/i3/lock.sh
 
     # back to normal: Enter or Escape or $mod+r
     bindsym Return mode "default"
     bindsym Escape mode "default"
     bindsym $mod+r mode "default"
 }
+
+bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/lock.sh
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
