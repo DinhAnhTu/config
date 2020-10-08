@@ -233,7 +233,7 @@ exec --no-startup-id nitrogen --set-auto /usr/share/backgrounds/windows-10-uhd-4
 
 exec --no-startup-id xinput --map-to-output 'ELAN Touchscreen' eDP-1
 
-exec --no-startup-id ~/.config/polybar/launch.sh
+#exec --no-startup-id ~/.config/polybar/launch.sh
 
 ####
 #
