@@ -51,7 +51,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+x kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -nb '#606266' -nf '#F2F6FC' -sb '#379b2e' -sf '#FFFFFF'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -224,14 +224,15 @@ exec --no-startup-id ibus-daemon --xim -d -r
 exec --no-startup-id xinput --set-prop "DLL07BE:01 06CB:7A13 Touchpad" "libinput Tapping Enabled" 1
 
 exec --no-startup-id xrandr --output eDP-1 --right-of HDMI-1
-exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080
-exec --no-startup-id xrandr --output HDMI-1 --brightness 0.7
 exec --no-startup-id xrandr --output eDP-1 --mode 2880x1620
 #exec --no-startup-id xrandr --output eDP-1 --brightness 0.7
 
-exec --no-startup-id nitrogen --set-auto /usr/share/backgrounds/windows-10-uhd-4k-wallpaper.jpg --head=0 && nitrogen --set-auto /usr/share/backgrounds/windows-10-uhd-4k-wallpaper.jpg --head=1
-
 exec --no-startup-id xinput --map-to-output 'ELAN Touchscreen' eDP-1
+
+exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080
+exec --no-startup-id xrandr --output HDMI-1 --brightness 0.7
+
+exec --no-startup-id nitrogen --set-auto /usr/share/backgrounds/wallpapers-2018/dreams.jpg --head=0 && nitrogen --set-auto /usr/share/backgrounds/wallpapers-2018/manhattan-336708.jpg --head=1
 
 #exec --no-startup-id ~/.config/polybar/launch.sh
 
@@ -242,10 +243,10 @@ exec --no-startup-id xinput --map-to-output 'ELAN Touchscreen' eDP-1
 ####
 
 # show gnome logout dialog
-bindsym $mod+Shift+q exec gnome-session-quit --logout
+bindsym $mod+Shift+q exec systemctl suspend
 
 # show gnome shutdown menu
-bindsym $mod+Shift+s exec gnome-session-quit --power-off
+bindsym $mod+Shift+s exec systemctl poweroff
 
 # use gnome-screensaver lock screen
 bindsym $mod+Shift+n exec gnome-screensaver-command -l
