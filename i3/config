@@ -234,7 +234,7 @@ exec --no-startup-id xrandr --output HDMI-1 --brightness 0.7
 
 exec --no-startup-id nitrogen --set-auto /usr/share/backgrounds/wallpapers-2018/dreams.jpg --head=0 && nitrogen --set-auto /usr/share/backgrounds/wallpapers-2018/manhattan-336708.jpg --head=1
 
-#exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id ~/.config/polybar/launch.sh
 
 ####
 #
