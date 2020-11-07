@@ -15,9 +15,33 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
-default_border pixel 1
-default_floating_border pixel 2
-#gaps inner all set 20
+for_window [class   = ".*"] title_format "%title  ⋯  %class"
+title_align center
+
+# Set inner/outer gaps
+gaps inner 2
+gaps outer 0
+gaps top 0
+gaps bottom 0
+
+for_window [class   = "^.*"] border pixel 0
+for_window [title   = "^.*"] border pixel 0
+
+border_radius 0
+smart_borders on
+# smart_gaps on
+
+#Gap size increase/decrease bind mode
+set $mode_gaps Gaps: [ UP ] increase, or [ DOWN ] decrease
+bindsym $mod+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+    bindsym Up gaps inner current plus 5
+    bindsym Down gaps inner current minus 5
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
