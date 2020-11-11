@@ -258,7 +258,7 @@ exec --no-startup-id xinput --map-to-output 'ELAN Touchscreen' eDP-1
 exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080
 exec --no-startup-id xrandr --output HDMI-1 --brightness 0.7
 
-exec --no-startup-id nitrogen --set-auto /home/dinhanhtu/Pictures/windows-10-uhd-4k-wallpaper.jpg --head=1 && nitrogen --set-zoom-fill /home/dinhanhtu/Pictures/pexels-pixabay.jpg --head=0 
+exec --no-startup-id nitrogen --set-auto /home/dinhanhtu/Pictures/squer.png --head=1 && nitrogen --set-zoom-fill /home/dinhanhtu/Pictures/window.jpg --head=0 
 
 
 exec --no-startup-id ~/.config/polybar/launch.sh

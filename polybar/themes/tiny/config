@@ -30,11 +30,12 @@ foreground = ${xrdb:foreground:#ffffff}
 [bar/bar]
 enable-ipc=true
 height = 25
-width = 25%
-;align= right
+width = 60%
+fixed-center = true
+;align= center
 offset-x = 86.5%
 offset-y = 10
-radius = 10
+radius = 5
 border-size = 0
 border-color = ${colors.foreground}
 module-margin = 2
@@ -54,9 +55,9 @@ font-1=Siji:size=9;2
 ; font-4=font\-logos:size=10;2
 
 ; Mpd
-modules-left = launcher 
+modules-left = launcher xwindow
 modules-center = i3 
-modules-right = cpu wlan pulseaudio battery backlight time xwindow 
+modules-right = cpu wlan pulseaudio battery backlight time 
 separator = >
 dim-value = 0.8
 ;tray-position = right
